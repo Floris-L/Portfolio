@@ -1,5 +1,8 @@
 :root {
-
+    --main-red: #F52B18;
+    --main-blue: #1001F5;
+    --main-yellow: #F5D218;
+    --main-green: #1BF77E;
 }
 
 * {
@@ -9,5 +12,9 @@
 }
 
 html {
-    
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+
 }
