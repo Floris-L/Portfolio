@@ -16,5 +16,67 @@ html {
 }
 
 body {
-
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    
 }
+
+.red {
+    color: var(--main-red);
+}
+
+/* nav */
+
+nav {
+    width: 100%;
+    height: 70px;
+    padding: 20px;
+    position: fixed;
+}
+
+/* hamburger menu  */
+
+.burger-container {
+    height: 100%;
+    width: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: column;
+}
+
+.top-bun,
+.bottom-bun {
+    width: 60px;
+    height: 10px;
+    background-color: #d9d9d9;
+}
+
+.bottom-bun {
+    width: 40px;
+}
+
+/* main */
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.header-text-container,
+.boxes-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+}
+
+.header-text-container {
+    align-items: center;
+    justify-content: center;
+}
+
+
+
