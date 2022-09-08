@@ -24,6 +24,12 @@ body {
     background-color: var(--main-bg-color);
 }
 
+.background-play {
+    width: 90%;
+    height: 90%;
+    background-color: var(--main-red);
+}
+
 h1 {
     color: #fff;
     font-size: 4em;
@@ -31,11 +37,13 @@ h1 {
 
 .red {
     color: var(--main-red);
+    transition: all 1s;
 }
 
 .outlined {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px;
+    font-size: 6em;
 }
 
 /* nav */
