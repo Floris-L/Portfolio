@@ -33,6 +33,11 @@ h1 {
     color: var(--main-red);
 }
 
+.outlined {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px;
+}
+
 /* nav */
 
 nav {
@@ -94,6 +99,7 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+
 .b1 {
     background-color: var(--main-red);
 }
@@ -108,4 +114,9 @@ main {
 
 .b4 {
     background-color: var(--main-green);
+}
+
+.b5  {
+    transition: all 1s;
+    z-index: -1;
 }
