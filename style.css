@@ -28,7 +28,13 @@ body {
     width: 90%;
     height: 90%;
     background-color: var(--main-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
+
 
 h1 {
     color: #fff;
