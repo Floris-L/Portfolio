@@ -59,7 +59,9 @@ nav {
     height: 70px;
     padding: 20px;
     position: fixed;
+    display: flex;
 }
+
 
 /* hamburger menu  */
 
