@@ -44,11 +44,10 @@ function tweens(x, y) {
   });
 
   var tween5 = gsap.to(".b5", {
-    duration: fAnimationDuration - 0.4,
+    duration: fAnimationDuration - 0.5,
     y: mainHeight * - 0.2,
-    scaleX: 4,
-    scaleY: 2,
-    backgroundColor: "#fff",
+    scaleX: 0,
+    scaleY: 0,
     ease: "none",
     paused: true
   });
@@ -88,7 +87,7 @@ function parallax(e) {
   if (!active) return;
   const x = (window.innerWidth - e.pageX * 4) / 100;
   const y = (window.innerHeight - e.pageY * 4) / 100;
-
   tweens(x, y)
-
 }
+
+
