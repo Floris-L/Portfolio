@@ -38,35 +38,26 @@ function tweens(x, y) {
   var tween4 = gsap.to(".b4", {
     duration: fAnimationDuration,
     x: mainWidth * -0.42 + x,
-    y: mainHeight * 0.165,
+    y: mainHeight * 0.165 - y,
     ease: "none",
     paused: true
   });
 
   var tween5 = gsap.to(".b5", {
     duration: fAnimationDuration - 0.5,
-    y: mainHeight * - 0.2,
+    y: mainHeight * - 0.2 -y,
     scaleX: 0,
     scaleY: 0,
     ease: "none",
     paused: true
   });
 
-  var tween6 = gsap.to(".floris-lamfers", {
-    duration: 0.1,
-    y: mainHeight * - 0.01,
-    x: mainWidth * 0.2,
-    scale: 2,
-    ease: "none",
-    paused: true
-  });
 
   tween1.play();
   tween2.play();
   tween3.play();
   tween4.play();
   tween5.play();
-  tween6.play();
 }
 
 function rearrangeHeaderText() {

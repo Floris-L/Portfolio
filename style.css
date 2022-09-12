@@ -24,15 +24,6 @@ body {
     background-color: var(--main-bg-color);
 }
 
-.background-play {
-    width: 90%;
-    height: 90%;
-    background-color: var(--main-red);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
 
 h1 {
     color: #fff;
@@ -54,6 +45,25 @@ a {
     font-size: 6em;
 }
 
+.left-bar-red {
+    border-left: 10px solid var(--main-red);
+}
+
+.left-bar-blue {
+    border-left: 10px solid var(--main-blue);
+}
+
+.left-bar-green {
+    border-left: 10px solid var(--main-green);
+}
+
+.left-bar-yellow {
+    border-left: 10px solid var(--main-yellow);
+}
+
+
+
+
 /* nav */
 
 nav {
@@ -62,12 +72,9 @@ nav {
     padding: 20px;
     position: fixed;
     display: flex;
+    z-index: 50;
 }
 
-.nav-item {
-    font-style: italic;
-    font-weight: 100;
-}
 
 
 /* hamburger menu  */
@@ -98,10 +105,26 @@ nav {
 .nav-expand {
     position: absolute;
     height: 100vh;
-    width: 70vw;
-    transform: translateX(-69vw);
-    background-color: var(--main-red);
+    width: 100vw;
+    transform: translateX(-100vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 50;
+    padding: 50px;
+    backdrop-filter: blur(8px);
 }
+
+.nav-item {
+    font-style: italic;
+    font-weight: 100; 
+}
+
+.nav-item:hover {
+    font-style: normal;
+    font-weight: 300;
+}
+
 
 /* main */
 
@@ -155,7 +178,7 @@ main {
     z-index: -1;
 }
 
-/* dashboard */
+/* dashboard.html */
 
 .main-dashboard {
     width: 100%;
@@ -178,7 +201,7 @@ table {
 }
 
 table thead tr {
-    background-color: var(--main-green);
+    background-color: var(--main-yellow);
     
     color: #ffffff;
     text-align: left;
@@ -198,5 +221,17 @@ table tbody {
 }
 
 table tbody tr:last-of-type {
-    border-bottom: 2px solid var(--main-green);
+    border-bottom: 2px solid var(--main-yellow);
+}
+
+/* play.html */
+
+.background-play {
+    width: 90%;
+    height: 90%;
+    background-color: var(--main-red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
