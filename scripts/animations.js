@@ -52,12 +52,21 @@ function tweens(x, y) {
     paused: true
   });
 
+  var tween6 = gsap.to(".outlined", {
+    duration: fAnimationDuration - 0.5,
+    x: mainWidth * -0.05 -x,
+    y: mainHeight * -0.04 -y,
+    ease: "none",
+    paused: true
+  });
+
 
   tween1.play();
   tween2.play();
   tween3.play();
   tween4.play();
   tween5.play();
+  tween6.play();
 }
 
 function rearrangeHeaderText() {
