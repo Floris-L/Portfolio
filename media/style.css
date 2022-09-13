@@ -156,6 +156,12 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .b1 {
     background-color: var(--main-red);
