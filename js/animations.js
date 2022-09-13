@@ -9,7 +9,6 @@ console.log(headerText.children[0].children[0].style.display)
 const fAnimationDuration = 0.5;
 
 function tweens(x, y) {
-
   var tween1 = gsap.to(".b1", {
     duration: fAnimationDuration,
     x: x,
@@ -20,8 +19,8 @@ function tweens(x, y) {
 
   var tween2 = gsap.to(".b2", {
     duration: fAnimationDuration,
-    x: mainWidth * 0.02 + y,
-    y: mainHeight * 0.5,
+    x: mainWidth * 0.02 + x + 10,
+    y: mainHeight * 0.5 + y,
     ease: "none",
     paused: true
   });
@@ -38,13 +37,14 @@ function tweens(x, y) {
   var tween4 = gsap.to(".b4", {
     duration: fAnimationDuration,
     x: mainWidth * -0.42 + x,
-    y: mainHeight * 0.165 - y,
+    y: mainHeight * 0.165 + y,
     ease: "none",
     paused: true
   });
 
   var tween5 = gsap.to(".b5", {
     duration: fAnimationDuration - 0.5,
+    x: x,
     y: mainHeight * - 0.2 -y,
     scaleX: 0,
     scaleY: 0,
