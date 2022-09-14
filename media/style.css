@@ -198,8 +198,19 @@ main {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    transition: all 1s;
+    backdrop-filter: blur(8px);
+    background-size: 200% 100%;
+    background-position: right bottom;
 }
+
+.box:hover {
+    border-radius: 10px;
+    background-position: left bottom;
+}
+
+.box:hover > a > h1 {
+    font-weight: 400;
+} 
 
 .box-title {
     font-weight: 100;
@@ -209,23 +220,23 @@ main {
 
 
 .b1 {
-    background-color: var(--main-grey);
 }
 
+.b1:hover {
+    
+}
+
+
 .b2 {
-    background-color: var(--main-grey);
 }
 
 .b3 {
-    background-color: var(--main-grey);
 }
 
 .b4 {
-    background-color: var(--main-grey);
 }
 
 .b5  {
-    background-color: var(--main-grey);
 }
 
 /* dashboard.html */
@@ -284,4 +295,11 @@ table tbody tr:last-of-type {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+/* profile */
+
+.content > p {
+    padding-top: 20px;
+    color: #fff;
 }

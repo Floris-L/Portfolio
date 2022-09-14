@@ -137,8 +137,18 @@ function color() {
   setTimeout(() => {
     b5.style.backgroundColor = "var(--main-blue)";
   }, 400);
-
 }
+
+function giveBoxGradient() {
+
+b1.style.background = "linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--main-red) 50%)"
+b2.style.background = "linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--main-red) 50%)"
+b3.style.background = "linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--main-red) 50%)"
+b4.style.background = "linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--main-red) 50%)"
+b5.style.background = "linear-gradient(to left, rgba(0, 0, 0, 0) 50%, var(--main-red) 50%)"
+}
+
+
 
 function onload() {
   color();
@@ -161,6 +171,7 @@ function rearrangeHeaderText() {
 
 function animateMenu() {
   rearrangeHeaderText();
+  giveBoxGradient();
   tweens(30, 30);
   active = true;
 }
