@@ -1,4 +1,3 @@
-const burgerContainer = document.querySelector(".burger-container");
 const navExpand = document.querySelector(".nav-expand")
 const viewWidth = window.innerWidth;
 

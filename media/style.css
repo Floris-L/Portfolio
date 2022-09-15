@@ -65,7 +65,8 @@ main {
     z-index: 199;
     pointer-events: none;
     border: var(--main-blue) 4px solid;
-    transition: border 1s;
+    transition: border-width 0.5s;
+    
 }
 
 .cursor-message {
@@ -111,7 +112,6 @@ nav {
     justify-content: space-between;
     align-content: center;
     flex-direction: column;
-    cursor: pointer;
 }
 
 .top-bun,

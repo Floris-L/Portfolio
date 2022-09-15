@@ -3,7 +3,6 @@ const headerText = document.querySelector(".header-text-container");
 const boxTitle = document.querySelectorAll(".box-title");
 const redHeaderText = document.querySelector(".red-header-text");
 const whiteHeaderText = document.querySelector(".white-header-text");
-const box = document.querySelectorAll(".box");
 const b1 = document.querySelector(".b1");
 const b2 = document.querySelector(".b2");
 const b3 = document.querySelector(".b3");
