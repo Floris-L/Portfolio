@@ -351,3 +351,8 @@ table tbody tr:last-of-type {
     padding: 10px;
 }
 
+.q-a > p > a {
+    font-weight: bold;
+
+    color: #F5D218;
+}
