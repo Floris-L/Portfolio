@@ -150,7 +150,6 @@ function smallerGradient() {
 function onload() {
   color();
   setTimeout(() => {
-    cursorMessage.style.display = "inline";
   }, 2200);
 }
 

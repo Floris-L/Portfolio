@@ -4,13 +4,14 @@ const anchor = document.querySelectorAll("a");
 const burgerContainer = document.querySelector(".burger-container");
 const box = document.querySelectorAll(".box");
 
+let cursorColor = "var(--main-blue)";
+
 document.addEventListener("mousemove", (e) => {
     let leftPosition = e.pageX -27;
     let topPosition = e.pageY -27;
     cursor.style.left = leftPosition + "px";
     cursor.style.top = topPosition + "px";
 })
-
 
 
 
@@ -25,13 +26,13 @@ const cursorNormal = () => {
 }
 
 window.onmousedown = () => {
-    cursor.style.borderColor = "#fff";
+    cursor.style.borderColor = cursorColor;
     cursor.style.borderWidth = "7px";
 }
 window.onmouseup = () => {
-    cursor.style.borderColor = "var(--main-blue)"
+    cursor.style.borderColor = "#fff";
     cursor.style.borderWidth = "5px";
-
+    
 }
 
 box.forEach(element => {
@@ -46,4 +47,5 @@ anchor.forEach(a => {
 
 burgerContainer.onmouseover = cursorBig;
 burgerContainer.onmouseleave = cursorNormal;
+
 
