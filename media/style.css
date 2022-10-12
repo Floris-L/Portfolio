@@ -23,6 +23,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    overflow-x: hidden;
     background-color: var(--main-bg-color);
 }
 
@@ -32,6 +33,14 @@ body {
 h1 {
     color: #fff;
     font-size: 4em;
+}
+
+h2 {
+    color: #fff;
+}
+
+h3 {
+    color: #fff;
 }
 
 h4 {
@@ -66,7 +75,9 @@ main {
     font-size: 6em;
 }
 
-
+.sub-p {
+    color: #888888;
+}
 
 .cursor {
     display: flex;
@@ -257,6 +268,50 @@ nav > img {
     flex-direction: column;
 }
 
+aside {
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    background-color: #f3f3f3;
+    height: calc(100% - 70px);
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: all 0.4s;
+}
+
+aside > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 15px;
+}
+
+aside > div > a {
+    color: #000;
+    text-decoration: underline;
+}
+
+aside > div > h3 {
+    color: #000;
+    font-size: 1.4em;
+    box-shadow: 5px 5px #888888;
+    background-color: var(--main-yellow);
+}
+
+.collapse-aside {
+    margin: 10px;
+    height: 26px;
+    background-color: var(--main-yellow);
+    border: none;
+    transition: all 0.1s;
+}
+
+.collapse-aside:hover {
+    box-shadow: 5px 5px #888888;
+}
+
 table {
     width: 90%;
     height: 60%;
@@ -305,6 +360,8 @@ table tbody tr:last-of-type {
     padding: 5px;
     
 }
+
+
 
 /* play.html */
 
@@ -401,4 +458,36 @@ span {
     font-weight: bold;
 
     color: #F5D218;
+}
+
+/* blog*/
+
+.blog-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.blog-card {
+    display: flex;
+    gap: 10px;
+    width: 500px;
+    justify-content: space-between;
+}
+
+.blog-card > div {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+
+.blog-card > img {
+    width: 100px;
+    height: 107px;
+    object-fit: cover;
 }
