@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./media/style.css">
+    <link id="favicon" rel="icon" href="">
 </head>
 
 <body>
@@ -15,6 +16,7 @@
             <div class="top-bun"></div>
             <div class="bottom-bun"></div>
         </div>
+        <img src="./media//images/hz-logo.png" alt="hz logo">
     </nav>
     <div class="nav-expand left-bar-yellow">
         <a href="./index.html">
@@ -33,71 +35,107 @@
             <h1 class="nav-item">Blog</h1>
         </a>
         <a href="./faq.html">
-            <h1 class="nav-item">faq</h1>
+            <h1 class="nav-item">FAQ</h1>
         </a>
     </div>
 
     <main class="main-dashboard">
         <table>
-            <thead>
-                <tr>
-                    <td>Quartile</td>
-                    <td>Course</td>
-                    <td>EC</td>
-                    <td>Exam</td>
-                    <td>Grade</td>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td rowspan="3">1</td>
-                    <td>Program & Career Orientation</td>
-                    <td>2,5</td>
-                    <td>Assessment</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Computer Science Basics</td>
-                    <td>5</td>
-                    <td>Written exam</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>Programming Basics</td>
-                    <td>5</td>
-                    <td>Case study</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td rowspan="2">2</td>
-                    <td rowspan="2">Object Oriented Programming</td>
-                    <td rowspan="2">10</td>
-                    <td>Case study</td>
-                    <td rowspan="2"></td>
-                </tr>
-                <tr>
-                    <td>Project</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-            </tbody>
+            <tr>
+                <th>Blok</th>
+                <th>Cursus</th>
+                <th>EC</th>
+                <th>Toets</th>
+                <th>Cijfer</th>
+            </tr>
+            <tr>
+                <td rowspan="3">1</td>
+                <td>Program & Career Orientation</td>
+                <td>2,5</td>
+                <td>Assessment</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Computer Science Basics</td>
+                <td>5</td>
+                <td>Written Exam</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Programming Basics</td>
+                <td>5</td>
+                <td>Case Study Exam</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">2</td>
+                <td rowspan="2">Object Oriented Programming</td>
+                <td rowspan="2">10</td>
+                <td>Case Study (50%)</td>
+                <td rowspan="2"></td>
+            <tr>
+                <td>Project (50%)</td>
+            </tr>
+            <tr>
+                <td rowspan="4">3</td>
+                <td>Framework Development 1</td>
+                <td>5</td>
+                <td>Case Study</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="3">Framework Project 1</td>
+                <td rowspan="3">7,5</td>
+                <td>Project (33%)</td>
+                <td rowspan="3"></td>
+            </tr>
+            <td>Case Study Exam (33%)</td>
+            </tr>
+            <tr>
+                <td>Report (33%)</td>
+            </tr>
+            <tr>
+                <td rowspan="3">4</td>
+                <td rowspan="3">Framework Project 2</td>
+                <td rowspan="3">10</td>
+                <td>Portfolio (50%)</td>
+                <td rowspan="3"></td>
+            </tr>
+            <tr>
+                <td>Project (25%)</td>
+            </tr>
+            <tr>
+                <td>Assignment (25%)</td>
+            </tr>
+            <tr>
+                <td>Entire Year</td>
+                <td>PPD</td>
+                <td>12,5</td>
+                <td>Portfolio</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td rowspan="2">When I want</td>
+                <td>Personality 1</td>
+                <td>1,25</td>
+                <td>Portfolio</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Personality 2</td>
+                <td>1,25</td>
+                <td>Portfolio</td>
+                <td></td>
+            </tr>
         </table>
+        <div class="progressbar">
+            <p><span class="completed">8</span>/60</p>
+        </div>
     </main>
     <div class="cursor">
         <p class="cursor-message">click</p>
     </div>
+    <script src="./scripts/progress-bar.js"></script>
     <script src="./scripts/cursor.js"></script>
     <script src="./scripts/nav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>

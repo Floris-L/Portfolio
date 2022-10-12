@@ -12,36 +12,19 @@ const favicon = document.getElementById("favicon");
 const mainWidth = main.clientWidth;
 const mainHeight = main.clientHeight;
 const fAnimationDuration = 0.5;
-const emoji = [
-  "🦃",
-  "🐓",
-  "🦆",
-  "🦢",
-  "🦜",
-  "🐳",
-  "🐍",
-  "🦄",
-  "🐦",
-  "🐟",
-  "🐠",
-];
+
 let active = false;
 
+//utility functions
 function randomNumberBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
+
 
 function setBg(element, percent, color) {
   element.style.background = `linear-gradient(to left, rgba(0, 0, 0, 0) ${percent}%, var(${color}) ${percent}%)`;
 }
 
-function randomFavicon(){
-  favicon.setAttribute(
-    "href",
-    `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${emoji[randomNumberBetween(0, 10)]
-    }</text></svg>`
-  );
-};
 
 
 
@@ -182,7 +165,6 @@ function parallax(e) {
   tweens(x, y)
 }
 
-randomFavicon();
 onload();
 document.addEventListener("mousemove", parallax);
 

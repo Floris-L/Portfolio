@@ -34,6 +34,10 @@ h1 {
     font-size: 4em;
 }
 
+h4 {
+    color: #fff;
+}
+
 h5 {
     color: #fff;
     font-size: 1.2em;
@@ -75,7 +79,7 @@ main {
     pointer-events: none;
     border: #fff 4px solid;
     transition: border-width 0.5s;
-    
+
 }
 
 .cursor-message {
@@ -91,14 +95,17 @@ main {
     0% {
         font-size: 1.8em;
     }
+
     50% {
         font-size: 2em;
     }
+
     100% {
         font-size: 1.8em;
     }
-    
+
 }
+
 /* nav */
 
 nav {
@@ -108,7 +115,14 @@ nav {
     position: fixed;
     display: flex;
     z-index: 50;
+    justify-content: space-between;
 }
+
+nav > img {
+    scale: 1.6;
+}
+
+
 
 
 
@@ -151,7 +165,7 @@ nav {
 
 .nav-item {
     font-style: italic;
-    font-weight: 100; 
+    font-weight: 100;
 }
 
 .nav-item:hover {
@@ -221,9 +235,9 @@ nav {
     border-radius: 10px;
 }
 
-.box:hover > a > h1 {
+.box:hover>a>h1 {
     font-weight: 400;
-} 
+}
 
 .box-title {
     font-weight: 100;
@@ -240,11 +254,12 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 table {
-    width: 500px;
-    height: 300px;
+    width: 90%;
+    height: 60%;
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
@@ -254,16 +269,21 @@ table {
     border-radius: 12px;
 }
 
+th {
+    text-align: start;
+    background-color: var(--main-yellow);
+}
+
 table thead tr {
     background-color: var(--main-yellow);
-    
+
     color: #ffffff;
     text-align: left;
 }
 
 table th,
 table td {
-    padding: 12px 15px;
+    padding: 10px 12px;
 }
 
 table tbody tr {
@@ -278,6 +298,14 @@ table tbody tr:last-of-type {
     border-bottom: 2px solid var(--main-yellow);
 }
 
+.progressbar {
+    width: 90%;
+    height: 60px;
+    border: #fff 2px solid;
+    padding: 5px;
+    
+}
+
 /* play.html */
 
 .center-content {
@@ -289,10 +317,10 @@ table tbody tr:last-of-type {
     height: 100%;
     width: 100%;
     overflow: hidden;
-  }
-  
- 
-  .typing-line {
+}
+
+
+.typing-line {
     border-left: 1px solid white;
     color: #fff;
     height: 3rem;
@@ -301,9 +329,9 @@ table tbody tr:last-of-type {
     width: 50%;
     float: right;
     user-select: none;
-  }
-  
-  .trailing-line {
+}
+
+.trailing-line {
     height: 3rem;
     display: flex;
     overflow: hidden;
@@ -311,28 +339,46 @@ table tbody tr:last-of-type {
     float: left;
     justify-content: flex-end;
     user-select: none;
-  }
+}
 
-  span {
+span {
     font-size: 40px;
     border: 1px solid transparent;
-  }
-  
-  .wpm {
+}
+
+.wpm {
     color: #d9d9d9;
     font-size: 20px;
     display: block;
     text-align: center;
     padding: 4rem;
-  }
-  
+}
+
 
 /* profile.html */
 
-.content > p {
+.content>p {
     padding-top: 20px;
     color: #fff;
     max-width: 400px;
+}
+
+.container {
+    display: flex;
+    align-items: flex-end;
+}
+
+.steve-jobs-image {
+    width: 200px;
+    height: 160px;
+    box-shadow: 10px 10px #888888;
+}
+
+.my-characteristics > ul > li {
+    max-width: 200px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #ececec;
 }
 
 /* faq */
@@ -347,11 +393,11 @@ table tbody tr:last-of-type {
     gap: 20px;
 }
 
-.q-a > p {
+.q-a>p {
     padding: 10px;
 }
 
-.q-a > p > a {
+.q-a>p>a {
     font-weight: bold;
 
     color: #F5D218;

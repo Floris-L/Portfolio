@@ -3,9 +3,7 @@ const cursorMessage = document.querySelector(".cursor-message");
 const anchor = document.querySelectorAll("a");
 const burgerContainer = document.querySelector(".burger-container");
 const box = document.querySelectorAll(".box");
-
 let cursorColor = "var(--main-blue)";
-
 document.addEventListener("mousemove", (e) => {
     let leftPosition = e.pageX -27;
     let topPosition = e.pageY -27;
@@ -48,4 +46,34 @@ anchor.forEach(a => {
 burgerContainer.onmouseover = cursorBig;
 burgerContainer.onmouseleave = cursorNormal;
 
+// set random favicon 
 
+const emoji = [
+    "🦃",
+    "🐓",
+    "🦆",
+    "🦢",
+    "🦜",
+    "🐳",
+    "🐍",
+    "🦄",
+    "🐦",
+    "🐟",
+    "🐠",
+  ];
+  
+  //utility functions
+  function randomNumberBetween(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  };
+  
+  function randomFavicon(){
+    favicon.setAttribute(
+      "href",
+      `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>${emoji[randomNumberBetween(0, 10)]
+      }</text></svg>`
+    );
+  };
+
+
+  randomFavicon();
