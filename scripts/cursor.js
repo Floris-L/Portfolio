@@ -11,8 +11,6 @@ document.addEventListener("mousemove", (e) => {
     cursor.style.top = topPosition + "px";
 })
 
-
-
 const cursorBig = () => {
     cursor.style.width = "60px";
     cursor.style.height = "60px";
@@ -21,6 +19,12 @@ const cursorBig = () => {
 const cursorNormal = () => {
     cursor.style.width = "50px";
     cursor.style.height = "50px";
+}
+
+const cursorReset = () => {
+    cursor.style.backgroundImage = "";
+    cursor.style.border = "4px #fff solid";
+    cursor.style.filter = "";
 }
 
 window.onmousedown = () => {
@@ -34,14 +38,15 @@ window.onmouseup = () => {
 }
 
 box.forEach(element => {
-    element.onmouseenter = cursorBig;
-    element.onmouseleave = cursorNormal;
+    element.onmouseleave = cursorReset;
 })
 
 anchor.forEach(a => {
     a.onmouseenter = cursorBig;
     a.onmouseleave = cursorNormal;
 })
+
+
 
 burgerContainer.onmouseover = cursorBig;
 burgerContainer.onmouseleave = cursorNormal;
@@ -77,3 +82,29 @@ const emoji = [
 
 
   randomFavicon();
+
+  b1.onmouseenter = () => {
+    cursor.style.border = "0px";
+    cursor.style.filter = "invert(1)";
+    cursor.style.backgroundImage = "url(../media/images/controller.png";
+}
+b2.onmouseenter = () => {
+    cursor.style.border = "0px";
+    cursor.style.filter = "invert(1)";
+    cursor.style.backgroundImage = "url(../media/images/profile.png";
+}
+b3.onmouseenter = () => {
+    cursor.style.border = "0px";
+    cursor.style.filter = "invert(1)";
+    cursor.style.backgroundImage = "url(../media/images/graph-icon.png";
+}
+b4.onmouseenter = () => {
+    cursor.style.border = "0px";
+    cursor.style.filter = "invert(1)";
+    cursor.style.backgroundImage = "url(../media/images/laptop.png";
+}
+b5.onmouseenter = () => {
+    cursor.style.border = "0px";
+    cursor.style.filter = "invert(1)";
+    cursor.style.backgroundImage = "url(../media/images/rocket.png";
+}

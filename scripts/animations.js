@@ -3,6 +3,8 @@ const headerText = document.querySelector(".header-text-container");
 const boxTitle = document.querySelectorAll(".box-title");
 const redHeaderText = document.querySelector(".red-header-text");
 const whiteHeaderText = document.querySelector(".white-header-text");
+const shortIntro = document.querySelector(".short-intro");
+const motivation = document.querySelector(".motivation");
 const b1 = document.querySelector(".b1");
 const b2 = document.querySelector(".b2");
 const b3 = document.querySelector(".b3");
@@ -20,13 +22,9 @@ function randomNumberBetween(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
 
-
 function setBg(element, percent, color) {
   element.style.background = `linear-gradient(to left, rgba(0, 0, 0, 0) ${percent}%, var(${color}) ${percent}%)`;
 }
-
-
-
 
 function tweens(x, y) {
   var tween1 = gsap.to(".b1", {
@@ -64,10 +62,10 @@ function tweens(x, y) {
 
   var tween5 = gsap.to(".b5", {
     duration: fAnimationDuration - 0.5,
-    x: x,
-    y: mainHeight * - 0.2 - y,
-    scaleX: 0,
-    scaleY: 0,
+    x: mainWidth * -0.15 + x,
+    y: 0 + y,
+    scaleX: 0.6,
+    scaleY: 0.3,
     ease: "none",
     paused: true
   });
@@ -80,12 +78,31 @@ function tweens(x, y) {
     paused: true
   });
 
+  var tween7 = gsap.to(".i1", {
+    duration: fAnimationDuration,
+    x:  - x,
+    y:  - y,
+    ease: "none",
+    paused: true
+  });
+
+  var tween8 = gsap.to(".i2", {
+    duration: fAnimationDuration,
+    x:  - x,
+    y:  - y,
+    ease: "none",
+    paused: true
+  });
+
+
   tween1.play();
   tween2.play();
   tween3.play();
   tween4.play();
   tween5.play();
   tween6.play();
+  tween7.play();
+  tween8.play();
 }
 
 
@@ -156,7 +173,6 @@ function animateMenu() {
 }
 
 window.onclick = animateMenu;
-// animateMenu();
 
 function parallax(e) {
   if (!active) return;
@@ -168,3 +184,11 @@ function parallax(e) {
 onload();
 document.addEventListener("mousemove", parallax);
 
+b5.onclick = (e) => {
+  motivation.style.display = "flex";
+  box.forEach(box => {
+    if (box.classList[1] !== "b5") {
+      box.style.display = "none";
+    }
+  })
+}
